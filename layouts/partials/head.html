@@ -1,11 +1,10 @@
 <div class="header">
-	{{ if .Site.Params.Avatar }}
-		<div class="avatar">
-			<a href="{{ .Site.BaseURL }}">
-				<img src="{{ .Site.Params.Avatar | safeURL }}" alt="{{ .Site.Title }}" />
-			</a>
-		</div>
-	{{ end }}
+	<div class="avatar">
+		<a href="{{ .Site.BaseURL }}">
+			<img src="https://micro.blog/{{ .Site.Author.username }}/avatar.jpg" alt="{{ .Site.Title }}" />
+		</a>
+	</div>
+
 	<h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
 	<div class="site-description">
 		{{- if isset .Site.Params "subtitle" -}}
