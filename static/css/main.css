@@ -338,6 +338,7 @@ ul {
     font-size: 3em;
     display: block;
     margin-bottom: 20px;
+    color: black;
 }
 .post-header .meta .date .rest {
     display: block;

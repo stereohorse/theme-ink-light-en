@@ -8,11 +8,11 @@
 		<div class="post">
 			<div class="post-header">
 				<div class="matter">
-					<h1 class="title">{{ .Title }}</h1>
+					<h1 class="title p-name">{{ .Title }}</h1>
 				</div>
 			</div>
 					
-			<div class="markdown">
+			<div class="markdown e-content">
 				{{ .Content }}
 			</div>
 
@@ -21,7 +21,7 @@
 					{{ if gt .Params.tags 0 }}
 						<ul class="flat">
 							{{ range .Params.tags }}
-							<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+							<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="u-url">{{ . }}</a></li>
 							{{ end }}
 						</ul>
 					{{ end }}
