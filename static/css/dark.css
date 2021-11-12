@@ -70,6 +70,6 @@ html.dark .highlight {
   background-color: #333;
 }
 
-.post-header .meta .date .day {
+html.dark .post-header .meta .date .day {
   color: #ddd;
 }
