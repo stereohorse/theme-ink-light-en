@@ -5,7 +5,7 @@
 	"fields": [
 		{
 			"field": "params.subtitle",
-			"label": "Subtitle",
+			"label": "Subtitle"
 		}
 	]
 }
